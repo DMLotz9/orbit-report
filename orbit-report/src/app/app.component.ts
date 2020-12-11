@@ -14,13 +14,12 @@ export class AppComponent {
   
   constructor() {
     this.sourceList = [
-       new Satellite("SiriusXM", "Communication", "2009-03-21", "LOW", true),
-       new Satellite("Cat Scanner", "Imaging", "2012-01-05", "LOW", true),
-       new Satellite("Weber Grill", "Space Debris", "1996-03-25", "HIGH", false),
-       new Satellite("GPS 938", "Positioning", "2001-11-01", "HIGH", true),
-       new Satellite("ISS", "Space Station", "1998-11-20", "LOW", true),
+       new Satellite("SiriusXM", "Communication", true, "LOW", "2009-03-21"),
+       new Satellite("Cat Scanner", "Imaging", true , "LOW", "2012-01-05"),
+       new Satellite("Weber Grill", "Space Debris", false , "HIGH", "1996-03-25"),
+       new Satellite("GPS 938", "Positioning", true, "HIGH", "2001-11-01"),
+       new Satellite("ISS", "Space Station", true, "LOW", "1998-11-20"),
     ];
-  };
-}
-
+  }
+};
 
